@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<p>Create 2 Employee object and add properties Employee Name, Employee ID, Employee Basic  Salary and create function to Calculate Salary, where calculation will be based on below logic
+    Total Salary  = Basic + 12% of Basic Salary  - 2% of Basic (TDS) 
+</p>
+
+<p id="demo1"></p>
+
+<body>
+    <script>
+            var employeeDetails = {
+            emp1Name: "Samadhan",
+            emp1Id: 23569,
+            emp1BasicSalary: 7500,
+            emp1TotalSalary: function () {
+                return (this.emp1BasicSalary + this.emp1BasicSalary * 12 / 100) - (this.emp1BasicSalary * 2 / 100);
+            }
+        }
+        document.getElementById("demo1").innerHTML = employeeDetails.emp1TotalSalary();
+    </script>
+</body>
+
+</html>
